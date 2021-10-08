@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/Dong-Yi-Xia/jest_testing#readme",
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "gitignore": "^0.7.0",
     "jest": "^27.2.5"
+  },
+  "dependencies": {
+    "prettier": "^2.4.1"
   }
 }

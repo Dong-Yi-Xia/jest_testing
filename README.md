@@ -15,3 +15,8 @@ toBeTruthy matches anything that an if statement treats as true\
 toBeFalsy matches anything that an if statement treats as false
 toBe is primary type
 toEqual is compare object reference
+
+
+## Packages
+npm install -D jest
+npm install -D @types/jest
