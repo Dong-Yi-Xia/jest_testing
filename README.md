@@ -12,11 +12,13 @@ CHECK FOR TRUTHY & FALSY VALUES \
 toBeNull matches only null\
 toBeDefined is the opposite of toBeUndefined\
 toBeTruthy matches anything that an if statement treats as true\
-toBeFalsy matches anything that an if statement treats as false
-toBe is primary type
+toBeFalsy matches anything that an if statement treats as false \
+toBe is primary type\
 toEqual is compare object reference
+
+Async Data needs to have `assertions` and `return`
 
 
 ## Packages
-npm install -D jest
+npm install -D jest\
 npm install -D @types/jest

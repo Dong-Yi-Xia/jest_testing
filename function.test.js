@@ -36,6 +36,32 @@ test('Should be under or equal 1600', () => {
   expect(load1 + load2).toBeLessThanOrEqual(1600);
 })
 
+//Regex
 test('There is no I in team', () => {
-  expect('team').to
+  expect('team').not.toMatch(/I/i)
+  // having the i flag - which is case-insensitive
+})
+
+//Array
+test('Admin should be in usernames', () => {
+  usernames = ['john', 'sammy', 'admin'];
+  expect(usernames).toContain('admin');
+})
+
+//Async Data
+
+//Promise
+// test('User fetched name should be Leanne Graham', () => {
+//   expect.assertions(1);
+//   return functions.fetchUser()
+//     .then(data => {
+//       expect(data.name).toEqual('Leanne Graham')
+//     })
+// })
+
+//Async
+test('User fetched name should be Leanne Graham', async () => {
+  expect.assertions(1);
+  const data = await functions.fetchUser();
+  expect(data.name).toEqual('Leanne Graham');
 })
